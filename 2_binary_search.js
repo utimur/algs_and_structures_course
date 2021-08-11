@@ -31,7 +31,7 @@ function recursiveBinarySearch(array, item, start, end) {
         return middle
     }
     if (item < array[middle]) {
-        return recursiveBinarySearch(array, item, 0, middle - 1 )
+        return recursiveBinarySearch(array, item, start, middle - 1 )
     } else {
         return recursiveBinarySearch(array, item, middle + 1, end )
     }
